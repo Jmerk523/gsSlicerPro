@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>gsSlicerPro</RootNamespace>
     <AssemblyName>gsSlicerPro</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -53,10 +53,13 @@
     <Compile Include="generators\SingleMaterialFFFPrintGenPro.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\geometry3Sharp\geometry3Sharp.csproj">
-      <Project>{0c518dda-28fe-44ca-9ab0-f9773974f13a}</Project>
-      <Name>geometry3Sharp</Name>
-    </ProjectReference>
+    <!-- <ProjectReference Include="..\geometry3Sharp\geometry3Sharp.csproj"> -->
+      <!-- <Project>{0c518dda-28fe-44ca-9ab0-f9773974f13a}</Project> -->
+      <!-- <Name>geometry3Sharp</Name> -->
+    <!-- </ProjectReference> -->
+    <PackageReference Include="geometry3Sharp">
+      <Version>1.0.289</Version>
+    </PackageReference>
     <ProjectReference Include="..\gsGCode\gsGCode.csproj">
       <Project>{25de77c9-14a4-4562-9a24-0bf1e612d9a9}</Project>
       <Name>gsGCode</Name>
